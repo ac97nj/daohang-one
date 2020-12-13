@@ -1,0 +1,218 @@
+
+* {
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("gedo1.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}
+
+.png {
+  margin: 0px;
+  margin-bottom: -20px;
+}
+
+.png1 {
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.png2 {
+  margin-bottom: -50px;
+  filter: opacity(80%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.globalHeader {
+  margin: 80px 20px;
+
+}
+
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .searchForm {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.searchForm > input {
+  width: 100%;
+  margin-right: 20px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+}
+
+.searchForm > button {
+  white-space: nowrap;
+  padding: 0 27px;
+  border-radius: 25px;
+  border: none;
+  background: #413B47;
+  color: #FFFFFF;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.globalMain {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+  .siteList {
+    /*border : 1px solid red;*/
+  }
+
+  .siteList > li {
+    margin-left: auto;
+    margin-right: auto;
+    flex: auto;
+  }
+}
+
+@media (min-width: 500px ) {
+  .siteList {
+    margin-left: 0px;
+  }
+
+  .siteList > li {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+
+.siteList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.siteList > li {
+  margin-bottom: 10px;
+}
+
+.siteList .site {
+  width: 160px;
+  display: flex;
+  background: rgba(242, 242, 242, 0.5);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  padding: 20px 0px;
+  position: relative;
+  height: 129px;
+}
+
+.siteList .site:hover {
+}
+
+
+.siteList .site > .close {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  display: none;
+  cursor: pointer;
+}
+
+.siteList .site:hover > .close {
+  display: block;
+}
+
+.siteList .site > .logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.siteList .site > .link {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.siteList .addButton {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
+  background: rgba(242, 242, 242, 0.5);
+}
+
+.siteList .addButton .icon {
+  width: 56px;
+  height: 56px;
+}
+
+.siteList .addButton .icon-Wrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.siteList .addButton .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+
+
+
+
+
